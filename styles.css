@@ -1,0 +1,112 @@
+ @import url('//fonts.googleapis.com/css?family=Monoton');
+
+*
+{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body
+{ 
+    min-height: 100vh;
+    background: url('image.jpg') no-repeat ;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+
+.header
+{ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgba(255, 255, 255, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+    
+}
+
+.header::before
+{ 
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(240, 147, 234, 0.4), transparent);
+    transition: .5s;
+}
+
+.header:hover::before
+{ 
+    left: 100%;
+}
+
+.logo
+{ 
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+
+}
+
+.navbar a
+{ 
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover
+{ 
+    color: #FF1177;
+    text-shadow: 0 0 10px #FF1177,
+                 0 0 20px #FF1177,
+                 0 0 30px #FF1177,
+                 0 0 40px #FF1177,
+                 0 0 70px #FF1177,
+                 0 0 80px #FF1177,
+                 0 0 100px #FF1177,
+                 0 0 150px #FF1177;
+}
+ 
+::-webkit-scrollbar
+{ 
+    width: 0;
+
+}
+#scrollpath
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+}
+
+#progressbar
+{ 
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(to top #db2a2a,rgb(186, 245, 9));
+}
+
+
+
+
+
+    
